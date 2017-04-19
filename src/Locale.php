@@ -7,7 +7,7 @@
  * @version   1.0.0
  */
 
-namespace ashrafakl;
+namespace ashrafakl\localization;
 
 use yii\base\Component;
 use Yii;

@@ -18,7 +18,7 @@
     },
     "autoload": {
         "psr-4": {
-            "ashrafakl\\locale\\": "src/"
+            "ashrafakl\\localization\\": "src/"
         }
     }
 }
