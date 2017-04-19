@@ -1,0 +1,24 @@
+{
+    "name": "ashrafakl/yii2-jstree",
+    "description": "The yii2-locale component represents the data relevant to a locale such as countries.. etc",
+    "keywords": ["yii2", "extension", "locale", "countries", "languages"],
+    "homepage": "https://github.com/ashrafakl/yii2-jstree",
+    "type": "yii2-extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ashraf Akl",
+            "email": "ashrafakl@yahoo.com",
+            "homepage": "http://www.ashrafakl.com/"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.5",
+         "ext-imagick": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "ashrafakl\\locale\\": "src/"
+        }
+    }
+}
