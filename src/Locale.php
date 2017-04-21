@@ -1,7 +1,7 @@
 <?php
 
 /**
- * @package   yii2-jsTree
+ * @package   yii2-locale
  * @author    Ashraf Akl <ashrafakl@yahoo.com>
  * @copyright Copyright &copy; Ashraf Akl, 2017
  * @version   1.0.0
