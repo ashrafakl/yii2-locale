@@ -73,18 +73,19 @@ class Locale extends Component
         }
         return $this->countries[$key];
     }
+
     /**
      * Get contry code for the given [[code]]
      * @param string $code country code
      * @param string $inLocale format locale to use to display the regions names, default to current yii language     
      * @return array      
      */
-    
     public function getCountry($code, $inLocale = null)
     {
         if (!$inLocale) {
             $inLocale = Yii::$app->language;
-        }        
+        }
+        $this->getCountries($inLocale);
         $key = strtolower($inLocale);
         if (isset($this->countries[$key][$code])) {
             return $this->countries[$key][$code];
