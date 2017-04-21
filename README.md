@@ -44,7 +44,7 @@ return [
 ```
 
 
-Class methods
+Public methods
 -------------------------------
 
 | Name     | Description    |
