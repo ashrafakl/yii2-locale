@@ -76,11 +76,22 @@ class Locale extends Component
 
     /**
      * Get languages list relative to its locale
+     * @param array $allowLanguages
      * @return array      
      */
-    public function getRelativePrimaryLanguages()
+    public function getRelativePrimaryLanguages($allowLanguages = [])
     {
-        return self::$relativeLanguages;
+        if ($allowLanguages) {
+            $relativeLanguages = [];
+            foreach ($allowLanguages as $language) {
+                if (array_key_exists($language, self::$relativeLanguages)) {
+                    $relativeLanguages[$language] = self::$relativeLanguages[$language];
+                }
+            }
+            return $relativeLanguages;
+        } else {
+            return self::$relativeLanguages;
+        }
     }
 
     /**
