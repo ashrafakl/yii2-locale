@@ -59,5 +59,5 @@ Example
 
 To get orientaion use the following code 
 ```pho
-<?=Yii::$app->locale->getOrientation()?>;
+<?= Yii::$app->locale->getOrientation() ?>
 ```
