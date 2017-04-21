@@ -1,4 +1,5 @@
-# yii2-locale
+yii2-locale
+===========
 
 Locale class represents the data relevant to a locale such as countries, languages, and orientation.
 
@@ -41,3 +42,14 @@ return [
     ]
 ];
 ```
+
+
+Class methods
+-------------------------------
+
+| Name     | Description    |
+| --------|---------|
+| getCountries  | Get Countries list |
+| getRelativePrimaryLanguages  | Get languages list relative to its locale |
+| getPrimaryLanguages  | Get languages list |
+| getOrientation  | Get characters orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left) |
