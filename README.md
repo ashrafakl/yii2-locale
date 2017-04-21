@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ashrafakl/yii2-locale "~1.0.1"
+php composer.phar require --prefer-dist ashrafakl/yii2-locale "~1.0.2"
 ```
 
 or add
 
 ```
-"ashrafakl/yii2-locale": "~1.0.1"
+"ashrafakl/yii2-locale": "~1.0.2"
 ```
 
 to the require section of your `composer.json` file.
@@ -50,6 +50,7 @@ Public methods
 | Name     | Description    |
 | --------|---------|
 | getCountries  | Get Countries list |
+| getCountry  | Get Country |
 | getRelativePrimaryLanguages  | Get languages list relative to its locale |
 | getPrimaryLanguages  | Get languages list |
 | getOrientation  | Get characters orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left) |
