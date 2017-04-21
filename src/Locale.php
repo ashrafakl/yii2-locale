@@ -114,7 +114,7 @@ class Locale extends Component
     }
 
     /**
-     * Get document orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left)
+     * Get characters orientation, which is either 'ltr' (left-to-right) or 'rtl' (right-to-left)
      * @param string $inLocale format locale to use to gets the orientation, default to current yii language     
      * @return string
      */
