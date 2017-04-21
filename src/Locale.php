@@ -24,6 +24,7 @@ class Locale extends Component
     private $countries;
     private $languages;
     private $rtlLanguages = ['ar', 'dv', 'fa', 'he', 'ks', 'ku', 'ps', 'syr', 'ur'];
+    private static $relativeLanguages = null;
 
     /**
      * Path of ResourceBundle for which to get available locales, or empty string for default locales list.
@@ -36,9 +37,14 @@ class Locale extends Component
      * Initializes Local.
      */
     public function init()
-    {        
+    {
         if ($this->locales === null) {
             $this->locales = \ResourceBundle::getLocales($this->bundlename);
+        }
+        if (self::$relativeLanguages === null) {
+            foreach ($this->locales as $locale) {
+                self::$relativeLanguages[\Locale::getPrimaryLanguage($locale)] = \Locale::getDisplayLanguage($locale, $locale);
+            }
         }
         parent::init();
     }
@@ -69,6 +75,15 @@ class Locale extends Component
     }
 
     /**
+     * Get languages list relative to its locale
+     * @return array      
+     */
+    public function getRelativePrimaryLanguages()
+    {
+        return self::$relativeLanguages;
+    }
+
+    /**
      * Get languages list
      * @param string $inLocale format locale to use to display the languages names, default to current yii language     
      * @return array      
@@ -96,7 +111,8 @@ class Locale extends Component
     {
         if (!$inLocale) {
             $inLocale = Yii::$app->language;
-        }        
+        }
         return in_array(\Locale::getPrimaryLanguage($inLocale), $this->rtlLanguages) ? 'rtl' : 'ltr';
     }
+
 }
