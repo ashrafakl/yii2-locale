@@ -1,7 +1,7 @@
 {
     "name": "ashrafakl/yii2-locale",
     "description": "The yii2-locale component represents the data relevant to a locale such as countries.. etc",
-    "keywords": ["yii2", "extension", "locale", "countries", "languages"],
+    "keywords": ["yii2", "extension", "locale", "countries", "languages", "orientation", "characters orientation"],
     "homepage": "https://github.com/ashrafakl/yii2-locale",
     "type": "yii2-extension",
     "license": "MIT",
