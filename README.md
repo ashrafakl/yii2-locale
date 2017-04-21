@@ -13,13 +13,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist ashrafakl/yii2-locale "~1.0.0"
+php composer.phar require --prefer-dist ashrafakl/yii2-locale "~1.0.1"
 ```
 
 or add
 
 ```
-"ashrafakl/yii2-locale": "~1.0.0"
+"ashrafakl/yii2-locale": "~1.0.1"
 ```
 
 to the require section of your `composer.json` file.
