@@ -48,7 +48,7 @@ Public properties
 
 | Name     | Description    |
 | --------|---------|
-| bundlename  | Path of ResourceBundle for which to get available locales, or empty string for default locales list [see](http://php.net/manual/en/resourcebundle.locales.php) |
+| bundlename  | Path of ResourceBundle for which to get available locales, or empty string for default locales list [http://php.net/manual/en/resourcebundle.locales.php](http://php.net/manual/en/resourcebundle.locales.php) |
 
 Public methods
 -------------------------------
